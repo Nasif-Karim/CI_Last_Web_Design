@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI last project</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="assets/vendor/aos-master/dist/aos.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/vendor/animate.css-main/animate.min.css">
+    <!-- wow -->
+    <link rel="stylesheet" href="assets/vendor/WOW-master/css/libs/animate.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/vendor/fontawespme-pro/css/all.min.css">
+    <!-- slickslider -->
+    <link rel="stylesheet" href="assets/vendor/slick-1.8.1/slick/slick.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+    @media screen and (max-width: 1024px) {
+        .contact_contact_container .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-left: 110px;
+        }
+
+        .contact_contact_container .scnd_row {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding-left: 80px;
+        }
+
+        .contact_contact_container strong {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .head_container .right_side {
+            top: -20px;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        .contact_contact_container .row {
+            padding-left: 0;
+        }
+
+        .contact_contact_container .scnd_row {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        .contact_contact_container .scnd_row :first-child {
+            display: none;
+        }
+
+        .head_container .right_side {
+            top: -18px;
+            right: 6px;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .contact_contact_container .row {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .form{
+            width: 375px;
+        }
+        #input-submit{
+            margin-left: 0;
+        }
+    }
+</style>
+
+<body>
+
+
+    <!-- head start -->
+
+    <div class="head d-flex align-items-center">
+        <div class="container head_container">
+            <div class="row">
+                <div class="col-lg-6 d-flex gap-4 left_side">
+                    <a href="tel:+8801786481122" class="d-flex gap-2"><i class="fa-solid fa-phone"></i>
+                        <p>+8801786481122</p>
+                    </a>
+                    <a href="email" class="d-flex gap-2"><i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <p>nasifkarim21@email.com</p>
+                    </a>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <div class="right_side position-absolute d-flex gap-4">
+                        <div class="icons d-flex gap-2">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        </div>
+                        <div class="login d-flex gap-2">
+                            <a href="#">Sign up</a>
+                            <a href="#">Log in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- head end -->
+    <!-- menu start -->
+
+    <div class="menu position-absolute animate__animated animate__bounceInDown">
+        <div class="container menu_container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="logo">
+                        <a href="#" style="text-transform: uppercase;"><span style="color: #FFFFFFCC;"
+                                class="pe-2">LIQUOR</span>store</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative d-flex align-items-center">
+                    <div class="right_side d-flex gap-5  position-absolute align-items-center">
+                        <div class="navbar">
+                            <nav>
+                                <ul class="d-flex menus">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about_us.html">About</a></li>
+                                    <li class="position-relative products"><a href="#"
+                                            class="d-flex gap-1 align-items-center">Products<i
+                                                class="fa-light fa-chevron-down" style="font-size: 12px;"></i></a>
+                                        <ul class="d-flex flex-column gap-2 position-absolute product_menu">
+                                            <li><a href="#">Products</a></li>
+                                            <li><a href="#">Single Product</a></li>
+                                            <li><a href="cart.html">Cart</a></li>
+                                            <li><a href="#">Ceckout</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html"><span style="color: #A23F25;">Contact</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="shopping_card position-relative">
+                            <a id="shopping_card" class="shopping_card" href="#"><i
+                                    class="fa-light fa-cart-plus"></i></a>
+                        </div>
+                        <img src="assets/images/3.png" alt="" class="position-absolute">
+                        <div id="cart" class="cart position-absolute d-flex flex-column ">
+                            <div class="single_cart d-flex gap-2">
+                                <img src="assets/images/prod-1.jpg" alt="">
+                                <div class="text">
+                                    <h4>Bacardi 151</h4>
+                                    <div class="lower_text d-flex gap-2">
+                                        <span>$25.99</span>
+                                        <p>Quantity: 01</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="single_cart d-flex gap-2">
+                                <img src="assets/images/prod-2.jpg" alt="">
+                                <div class="text">
+                                    <h4>Bacardi 151</h4>
+                                    <div class="lower_text d-flex gap-2">
+                                        <span>$25.99</span>
+                                        <p>Quantity: 01</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="single_cart d-flex gap-2">
+                                <img src="assets/images/prod-3.jpg" alt="">
+                                <div class="text">
+                                    <h4>Bacardi 151</h4>
+                                    <div class="lower_text d-flex gap-2">
+                                        <span>$25.99</span>
+                                        <p>Quantity: 01</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="cart.html" class="btn cart_view_btn">
+                                View All
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu_btn position-absolute">
+            <a href="#" id="menu_btn"><i class="fa-regular fa-bars"></i></a>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- menu end -->
+
+    <!-- banner section start -->
+    <div class="banner">
+        <div class="snd_banner">
+            <div class="container banner_container_about d-flex align-items-end justify-content-center">
+                <div class="row">
+                    <div class="text_about text-capitalize text-center wow fadeInUp">
+                        <div class="a_line d-flex gap-4 ps-4">
+                            <div class="home d-flex gap-2 align-items-center">
+                                <p>Home</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="about_us d-flex gap-2 align-items-center">
+                                <p>Contact</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <h1>Contact Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- contact start -->
+
+    <section class="contact_contact">
+        <div class="container contact_contact_container">
+            <div class="row">
+                <div data-aos="fade-up" class="col-lg-3 single_contact d-flex flex-column
+                    gap-3">
+                    <div class="logo1 d-flex justify-content-center">
+                        <i class="fa-light fa-location-dot"></i>
+                    </div>
+                    <div class="text d-flex gap-1 justify-content-center">
+                        <strong>Address: </strong>
+                        <p>Sonadanga,Khulna</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-lg-3 single_contact d-flex flex-column
+                    gap-3">
+                    <div class="logo2 d-flex justify-content-center">
+                        <i class="fa-light fa-phone"></i>
+                    </div>
+                    <div class="text d-flex gap-1 justify-content-center hover">
+                        <strong>Phone: </strong>
+                        <a href="tel:+8801786481122">+8801786481122</a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-lg-3 single_contact d-flex flex-column
+                    gap-3">
+                    <div class="logo2 d-flex justify-content-center">
+                        <i class="fa-light fa-envelope"></i>
+                    </div>
+                    <div class="text d-flex gap-1 justify-content-center hover">
+                        <strong>E-mail: </strong>
+                        <a href="email">nasifkarim21@gmail.com</a>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="col-lg-3 single_contact d-flex flex-column
+                    gap-3">
+                    <div class="logo3 d-flex justify-content-center">
+                        <i class="fa-brands fa-quora"></i>
+                    </div>
+                    <div class="text d-flex gap-1 justify-content-center hover">
+                        <strong>ID: </strong>
+                        <a href="#">Nasif Karim</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 scnd_row">
+                <div data-aos="fade-right" class="col-lg-6 map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5200.89357223596!2d89.55036952602752!3d22.817758172722165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1673385686033!5m2!1sen!2sbd"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div data-aos="fade-left" class="col-lg-6 form">
+                    <h1 class="text-center">Contact Us</h1>
+                    <form class="cf d-flex flex-column justify-content-center">
+                        <div class="half left cf d-flex flex-column">
+                            <p class="ps-2">Your Name:</p>
+                            <input type="text" id="input-name" placeholder="Name">
+                            <p class="ps2">Your Email Address</p>
+                            <input type="email" id="input-email" placeholder="Email address">
+                            <p class="ps2"> Subject</p>
+                            <input type="text" id="input-subject" placeholder="Subject">
+                        </div>
+                        <div class="half right cf">
+                            <textarea name="message" type="text" id="input-message" cols="75" rows="3"
+                                placeholder="Message" class="ms-2 ps-2"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" id="input-submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact end -->
+
+    <!-- contact section start -->
+
+    <div class="contact">
+        <div class="container contact_contaier pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="#" class="logo pb-5">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <p>Far far away, behind the word mountains, far from the countries.</p>
+                        <div class="socials d-flex gap-4 justify-content-center">
+                            <a data-wow-duration=".5s" href="#" class="wow fadeInUp"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a data-wow-duration="1s" href="#" class="wow fadeInUp"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a data-wow-duration="1.5s" href="#" class="wow fadeInUp"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeInRight col-lg-2">
+                    <h4>My Accounts</h4>
+                    <div class="options d-flex flex-column gap-2">
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>My Account</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Register</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Log In</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>My Order</a>
+                    </div>
+                </div>
+                <div class="wow fadeInRight col-lg-2">
+                    <h4>Information</h4>
+                    <div class="options d-flex flex-column gap-2">
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>About us</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Catalog</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Contact us</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Term & Conditions</a>
+                    </div>
+                </div>
+                <div class="wow fadeInRight col-lg-2">
+                    <h4>Quick Link</h4>
+                    <div class="options d-flex flex-column gap-2">
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>New User</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Help Center</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Report Spam</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Faq's</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4 data-wow-delay=".3s" class="wow fadeInUp">Have a Questions?</h4>
+                    <div data-wow-delay=".6s" class="map d-flex gap-3 pb-3 icons wow fadeInUp">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <a href="location" class="contacts">
+                            <p>Sonadanga,Khulna</p>
+                        </a>
+                    </div>
+                    <div data-wow-delay=".9s" class="phone d-flex gap-3 pb-3 icons wow fadeInUp">
+                        <i class="fa-regular fa-phone-rotary"></i>
+                        <a href="tel:+8801786481122" class="contacts">
+                            <p>+8801786481122</p>
+                        </a>
+                    </div>
+                    <div data-wow-delay="1.2s" class="mail d-flex gap-3 pb-3 icons wow fadeInUp">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="email" class="contacts">
+                            <p>nasifkarim21@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- contact section end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="container footer_container d-flex align-items-center justify-content-center p-5">
+            <p>Copyright ©2023 All rights reserved | This template is made by <span
+                    data-wow-iteration="99999999999999999" title="Hola!
+                    My name is Nasif Karim.
+                    This website is made by me.
+                    It's my Cloud Institute's last project.
+                    Pray for me.
+                    Your loveing Nasif Karim.
+                    
+                    Gracias." class="wow flash">Nasif Karim.</span></p>
+        </div>
+    </div>
+    <!-- footer end -->
+
+
+    <!-- js section -->
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <!-- jquery migrate -->
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/vendor/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- waypoints -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- counterup js -->
+    <script src="assets/vendor/counter/Counter-Up-master/jquery.counterup.min.js"></script>
+    <!-- aos js -->
+    <script src="assets/vendor/aos-master/dist/aos.js"></script>
+    <!-- wow js -->
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $('#menu_btn').click(function (e) {
+            e.preventDefault();
+            $('.navbar').toggleClass('show');
+        });
+    </script>
+
+</body>
+
+</html>

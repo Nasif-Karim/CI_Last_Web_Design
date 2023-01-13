@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI last project</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="assets/vendor/aos-master/dist/aos.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/vendor/animate.css-main/animate.min.css">
+    <!-- wow -->
+    <link rel="stylesheet" href="assets/vendor/WOW-master/css/libs/animate.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/vendor/fontawespme-pro/css/all.min.css">
+    <!-- slickslider -->
+    <link rel="stylesheet" href="assets/vendor/slick-1.8.1/slick/slick.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<style>
+    @media screen and (max-width: 768px) {
+        .head_container .right_side {
+            top: -19px;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .head_container .right_side {
+            top: 8px;
+            right: 0;
+        }
+
+        .testimonial_container .text_side {
+            height: 360px;
+        }
+
+        .testimonial_container p {
+            font-size: 8px;
+            font-style: italic;
+            line-height: 14px;
+        }
+        .testimonial_container h3{
+            font-size: 17px;
+        }
+    }
+</style>
+
+<body>
+    <!-- About us section start -->
+
+
+
+
+    <div class="index_about_us">
+
+
+        <!-- head start -->
+
+        <div class="head d-flex align-items-center">
+            <div class="container head_container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex gap-4 left_side">
+                        <a href="tel:+8801786481122" class="d-flex gap-2"><i class="fa-solid fa-phone"></i>
+                            <p>+8801786481122</p>
+                        </a>
+                        <a href="email" class="d-flex gap-2"><i class="fa-sharp fa-solid fa-paper-plane"></i>
+                            <p>nasifkarim21@email.com</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 position-relative">
+                        <div class="right_side position-absolute d-flex gap-4">
+                            <div class="icons d-flex gap-2">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            </div>
+                            <div class="login d-flex gap-2">
+                                <a href="#">Sign up</a>
+                                <a href="#">Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- head end -->
+        <!-- menu start -->
+
+        <div class="menu position-absolute animate__animated animate__bounceInDown">
+            <div class="container menu_container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="logo">
+                            <a href="#" style="text-transform: uppercase;"><span style="color: #FFFFFFCC;"
+                                    class="pe-2">LIQUOR</span>store</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-relative d-flex align-items-center">
+                        <div class="right_side d-flex gap-5  position-absolute align-items-center">
+                            <div class="navbar">
+                                <nav>
+                                    <ul class="d-flex menus">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="#"><span style="color: #A23F25;">About</span></a></li>
+
+                                        <li class="position-relative products"><a href="#"
+                                                class="d-flex gap-1 align-items-center">Products<i
+                                                    class="fa-light fa-chevron-down" style="font-size: 12px;"></i></a>
+                                            <ul class="d-flex flex-column gap-2 position-absolute product_menu">
+                                                <li><a href="#">Products</a></li>
+                                                <li><a href="#">Single Product</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="#">Ceckout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="shopping_card position-relative">
+                                <a id="shopping_card" class="shopping_card" href="#"><i
+                                        class="fa-light fa-cart-plus"></i></a>
+                            </div>
+                            <img src="assets/images/3.png" alt="" class="position-absolute">
+                            <div id="cart" class="cart position-absolute d-flex flex-column ">
+                                <div class="single_cart d-flex gap-2">
+                                    <img src="assets/images/prod-1.jpg" alt="">
+                                    <div class="text">
+                                        <h4>Bacardi 151</h4>
+                                        <div class="lower_text d-flex gap-2">
+                                            <span>$25.99</span>
+                                            <p>Quantity: 01</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="single_cart d-flex gap-2">
+                                    <img src="assets/images/prod-2.jpg" alt="">
+                                    <div class="text">
+                                        <h4>Bacardi 151</h4>
+                                        <div class="lower_text d-flex gap-2">
+                                            <span>$25.99</span>
+                                            <p>Quantity: 01</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="single_cart d-flex gap-2">
+                                    <img src="assets/images/prod-3.jpg" alt="">
+                                    <div class="text">
+                                        <h4>Bacardi 151</h4>
+                                        <div class="lower_text d-flex gap-2">
+                                            <span>$25.99</span>
+                                            <p>Quantity: 01</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="cart.html" class="btn cart_view_btn">
+                                    View All
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_btn position-absolute">
+                <a href="#" id="menu_btn"><i class="fa-regular fa-bars"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- menu end -->
+
+    <!-- banner section start -->
+    <div class="banner">
+        <div class="snd_banner">
+            <div class="container banner_container_about d-flex align-items-end justify-content-center">
+                <div class="row">
+                    <div class="text_about text-capitalize text-center wow fadeInUpBig">
+                        <div class="a_line d-flex gap-4">
+                            <div class="home d-flex gap-2 align-items-center">
+                                <p>Home</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="about_us d-flex gap-2 align-items-center">
+                                <p>About us</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <h1>About Us</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end -->
+
+    <!-- support section start -->
+
+    <div class="support">
+        <div class="container support_container">
+            <div class="row">
+                <div data-aos="zoom-in" class="col-lg-4 d-flex gap-3 align-items-center">
+                    <div class="icon">
+                        <img src="assets/images/support1.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>Online Support 24/7</h4>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-lg-4 d-flex gap-3 align-items-center">
+                    <div class="icon">
+                        <img src="assets/images/suppotr2.png" alt="" style="width: 82px;">
+                    </div>
+                    <div class="text">
+                        <h4>Money Back Guarantee</h4>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-lg-4 d-flex gap-3 align-items-center">
+                    <div class="icon">
+                        <img src="assets/images/support3.png" alt="" style="width: 76px;">
+                    </div>
+                    <div class="text">
+                        <h4>Free Shipping & Return</h4>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- support section end -->
+    <!-- experience section start -->
+
+    <section class="experience ">
+        <div class="container experience_container">
+            <div class="row">
+                <div data-aos="flip-left" class="col-lg-6">
+                    <img src="assets/images/3.jpg" alt="">
+                </div>
+                <div data-aos="fade-down" class="col-lg-6 d-flex align-items-center">
+                    <div class="text">
+                        <em style="color: #c24b2d;">Since 1905</em>
+                        <h1>Desire Meets A New Taste</h1>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia.
+                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                        </p>
+                        <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from
+                            it
+                            would have been rewritten a thousand times and everything that was left from its origin
+                            would be the word "and" and the Little Blind Text should turn around and return to its
+                            own,
+                            safe country.</p>
+                        <h3><span style="color: #b9492d;" class="counters">
+                                <i">115</i>
+                            </span> Years of Experience In
+                            Business</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- experience section end  -->
+    <!-- drinks kind start -->
+
+    <section class="drinks_kind">
+        <div class="container drinks_kind_conatiner">
+            <div class="kinds">
+                <div class="row">
+                    <div class="single_kind col-lg-2 wow fadeInLeftBig">
+                        <a href="#" class="d-flex flex-column gap-2 align-items-center">
+                            <img src="assets/images/kind-1.jpg" alt="">
+                            <p style="font-size: 20px; font-weight: 600;">Brandy</p>
+                        </a>
+                    </div>
+                    <div data-wow-delay="1.5s" class="single_kind col-lg-2 wow fadeInDown">
+                        <a href="#" class="d-flex flex-column gap-2 align-items-center">
+                            <img src="assets/images/kind-2.jpg" alt="">
+                            <p style="font-size: 20px; font-weight: 600;">Gin</p>
+                        </a>
+                    </div>
+                    <div data-wow-delay="1s" class="single_kind col-lg-2 wow flipInX">
+                        <a href="#" class="d-flex flex-column gap-2 align-items-center">
+                            <img src="assets/images/kind-3.jpg" alt="">
+                            <p style="font-size: 20px; font-weight: 600;">Rum</p>
+                        </a>
+                    </div>
+                    <div data-wow-delay="1s" class="single_kind col-lg-2 wow flipInY">
+                        <a href="#" class="d-flex flex-column gap-2 align-items-center">
+                            <img src="assets/images/kind-4.jpg" alt="">
+                            <p style="font-size: 20px; font-weight: 600;">Tequila</p>
+                        </a>
+                    </div>
+                    <div data-wow-delay="1.5s" class="single_kind col-lg-2 wow fadeIn">
+                        <a href="#" class="d-flex flex-column gap-2 align-items-center">
+                            <img src="assets/images/kind-5.jpg" alt="">
+                            <p style="font-size: 20px; font-weight: 600;">Vodka</p>
+                        </a>
+                    </div>
+                    <div class="single_kind col-lg-2 wow fadeInRightBig">
+                        <a href="#" class="d-flex flex-column gap-2 align-items-center">
+                            <img src="assets/images/kind-6.jpg" alt="">
+                            <p style="font-size: 20px; font-weight: 600;">Whiskey</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- drinks kind end -->
+
+    <!-- testimonial start -->
+
+    <section class="testimonial">
+        <div class="scnd_testimonial d-flex align-items-center">
+            <div class="container testimonial_container">
+                <div data-aos="zoom-in" class="header text-center">
+                    <p>Testimonial</p>
+                    <h3>Happy Clients</h3>
+                </div>
+                <div data-aos="zoom-in" class="container">
+                    <div class="row">
+                        <div class="col-lg-12 slider">
+                            <div class="text_side">
+                                <p style="font-style: italic;">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.
+                                </p>
+                                <div class="iamge d-flex gap-2 pt-3">
+                                    <img src="assets/images/person_1.jpg" alt="">
+                                    <div class="text">
+                                        <h3>Roger Scott</h3>
+                                        <p>Marketing Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_side">
+                                <p style="font-style: italic;">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.
+                                </p>
+                                <div class="iamge d-flex gap-2 pt-3">
+                                    <img src="assets/images/person_2.jpg" alt="">
+                                    <div class="text">
+                                        <h3>Roger Scott</h3>
+                                        <p>Marketing Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_side">
+                                <p style="font-style: italic;">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.
+                                </p>
+                                <div class="iamge d-flex gap-2 pt-3">
+                                    <img src="assets/images/person_3.jpg" alt="">
+                                    <div class="text">
+                                        <h3>Roger Scott</h3>
+                                        <p>Marketing Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_side">
+                                <p style="font-style: italic;">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.
+                                </p>
+                                <div class="iamge d-flex gap-2 pt-3">
+                                    <img src="assets/images/person_4.jpg" alt="">
+                                    <div class="text">
+                                        <h3>Roger Scott</h3>
+                                        <p>Marketing Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_side">
+                                <p style="font-style: italic;">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.
+                                </p>
+                                <div class="iamge d-flex gap-2 pt-3">
+                                    <img src="assets/images/person_1.jpg" alt="">
+                                    <div class="text">
+                                        <h3>Roger Scott</h3>
+                                        <p>Marketing Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_side">
+                                <p style="font-style: italic;">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.
+                                </p>
+                                <div class="iamge d-flex gap-2 pt-3">
+                                    <img src="assets/images/person_2.jpg" alt="">
+                                    <div class="text">
+                                        <h3>Roger Scott</h3>
+                                        <p>Marketing Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_side">
+                                <p style="font-style: italic;">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts.
+                                </p>
+                                <div class="iamge d-flex gap-2 pt-3">
+                                    <img src="assets/images/person_3.jpg" alt="">
+                                    <div class="text">
+                                        <h3>Roger Scott</h3>
+                                        <p>Marketing Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial end -->
+    <!-- Full counter start -->
+
+    <section class="full_counter">
+        <div class="container full_container">
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <h3 class="counters">3000</h3>
+                    <p>OUR SATISFIED CUSTOMERS</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h3 class="counters">115</h3>
+                    <p>YEARS OF EXPERIENCE</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h3 class="counters">100</h3>
+                    <p>KINDS OF LIQUOR</p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <h3 class="counters">40</h3>
+                    <p>OUR BRANCHES</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full counter end -->
+
+    <!-- contact section start -->
+
+    <div class="contact">
+        <div class="container contact_contaier pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="#" class="logo pb-5">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <p>Far far away, behind the word mountains, far from the countries.</p>
+                        <div class="socials d-flex gap-4 justify-content-center">
+                            <a data-wow-duration=".5s" href="#" class="wow fadeInUp"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a data-wow-duration="1s" href="#" class="wow fadeInUp"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a data-wow-duration="1.5s" href="#" class="wow fadeInUp"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow fadeInRight col-lg-2">
+                    <h4>My Accounts</h4>
+                    <div class="options d-flex flex-column gap-2">
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>My Account</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Register</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Log In</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>My Order</a>
+                    </div>
+                </div>
+                <div class="wow fadeInRight col-lg-2">
+                    <h4>Information</h4>
+                    <div class="options d-flex flex-column gap-2">
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>About us</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Catalog</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Contact us</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Term & Conditions</a>
+                    </div>
+                </div>
+                <div class="wow fadeInRight col-lg-2">
+                    <h4>Quick Link</h4>
+                    <div class="options d-flex flex-column gap-2">
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>New User</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Help Center</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Report Spam</a>
+                        <a href="#"><i class="fa-regular fa-chevron-right"></i>Faq's</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4 data-wow-delay=".3s" class="wow fadeInUp">Have a Questions?</h4>
+                    <div data-wow-delay=".6s" class="map d-flex gap-3 pb-3 icons wow fadeInUp">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <a href="location" class="contacts">
+                            <p>Sonadanga,Khulna</p>
+                        </a>
+                    </div>
+                    <div data-wow-delay=".9s" class="phone d-flex gap-3 pb-3 icons wow fadeInUp">
+                        <i class="fa-regular fa-phone-rotary"></i>
+                        <a href="tel:+8801786481122" class="contacts">
+                            <p>+8801786481122</p>
+                        </a>
+                    </div>
+                    <div data-wow-delay="1.2s" class="mail d-flex gap-3 pb-3 icons wow fadeInUp">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="email" class="contacts">
+                            <p>nasifkarim21@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- contact section end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="container footer_container d-flex align-items-center justify-content-center p-5">
+            <p>Copyright ©2023 All rights reserved | This template is made by <span
+                    data-wow-iteration="99999999999999999" title="Hola!
+                My name is Nasif Karim.
+                This website is made by me.
+                It's my Cloud Institute's last project.
+                Pray for me.
+                Your loveing Nasif Karim.
+                
+                Gracias." class="wow flash">Nasif Karim.</span></p>
+        </div>
+    </div>
+    <!-- footer end -->
+
+
+
+    <!-- js section -->
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <!-- jquery migrate -->
+    <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/vendor/slick-1.8.1/slick/slick.min.js"></script>
+    <!-- waypoints -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!-- counterup js -->
+    <script src="assets/vendor/counter/Counter-Up-master/jquery.counterup.min.js"></script>
+    <!-- aos js -->
+    <script src="assets/vendor/aos-master/dist/aos.js"></script>
+    <!-- wow js -->
+    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $('#menu_btn').click(function (e) {
+            e.preventDefault();
+            $('.navbar').toggleClass('show');
+        });
+    </script>
+
+
+
+
+    <!-- About us section end -->
+
+
+
+</body>
+
+</html>
